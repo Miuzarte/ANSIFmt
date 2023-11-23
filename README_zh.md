@@ -1,16 +1,16 @@
 # ANSIFmt
 
-"fmt" with ANSI escape sequences.
+"fmt" 但是附带 ANSI 转义序列
 
-English | [Chinese](./README_zh.md)
+[English](./README.md) | Chinese
 
-### Reference
+### 参考资料
 
 [wikipedia/ANSI_escape_code](https://www.wikipedia.org/wiki/ANSI_escape_code)
 
-### Usage
+### 用法
 
-Preview on your terminal:
+在自己的终端上预览效果：
 
 ```
 go get github.com/Miuzarte/ANSIFmt
@@ -19,19 +19,19 @@ go test -run ^TestUsage github.com/Miuzarte/ANSIFmt -v -timeout 1s
 
 #### Simply Print
 
-**output:**
+**输出：**
 
 ![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/ad48d653-a6c9-4220-a9ba-5c28ee601f9c)
 
-You might notice there's still background color at the end of line 3 and 7.
+第 3、7 行可以看到末尾仍有彩色背景
 
-Actually I have RESET the escape sequences at the end of every string.
+但实际上每个字符串打印完后都有重置 ANSI 转义序列
 
-So I thing it's a bug caused by WindowsTerminal?
+可能是 WindowsTerminal 的 bug 吧
 
-It is in line with expectations in JetBrains GoLand output terminal.
+JetBrains GoLand 的测试输出中是正常的
 
-**code:**
+**代码：**
 
 ```go
 package main
@@ -65,17 +65,17 @@ func simplyPrint() {
 }
 ```
 
-`NOTICE: Number of bytes written returned by Printf/Print/Println is no longer reliable.`
+`注意：Printf/Print/Println 返回的写入字节数不再有效`
 
 #### Colorful Logging
 
-**output:**
+**输出：**
 
 ![Blinking](https://github.com/Miuzarte/ANSIFmt/assets/66856838/6a2b9475-0be1-4172-bcdc-b03f974f22d0)
 
-*Ignore that there's still Panic after Fatal, just for demonstration purposes.*
+*不要在意为什么 Fatal 之后还能 Panic，仅作演示*
 
-**code:**
+**代码：**
 
 ```go
 package main
@@ -137,7 +137,7 @@ var (
 )
 ```
 
-### Table
+### ~~桌子~~
 
 ```go
 ANSIFmt.Style {
