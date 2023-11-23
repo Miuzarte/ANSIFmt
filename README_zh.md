@@ -15,21 +15,16 @@
 ```
 go get github.com/Miuzarte/ANSIFmt
 go test -run ^TestUsage github.com/Miuzarte/ANSIFmt -v -timeout 1s
+
+# 预览所有 ANSI 转义序列
+go test -run ^TestAllANSIEscapeSequences github.com/Miuzarte/ANSIFmt -v -timeout 1s
 ```
 
 #### Simply Print
 
 **输出：**
 
-![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/50b81255-84d1-4d47-bbc8-94a617f5b4bd)
-
-第 3、7 行可以看到末尾仍有彩色背景
-
-但实际上每个字符串打印完后都有重置 ANSI 转义序列
-
-可能是 WindowsTerminal 的 bug 吧
-
-JetBrains GoLand 的测试输出中是正常的
+![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/46a5ca92-022b-444c-b654-6a622ba72cfb)
 
 **代码：**
 

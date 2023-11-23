@@ -15,21 +15,16 @@ Preview on your terminal:
 ```
 go get github.com/Miuzarte/ANSIFmt
 go test -run ^TestUsage github.com/Miuzarte/ANSIFmt -v -timeout 1s
+
+# for all ANSI escape sequences
+go test -run ^TestAllANSIEscapeSequences github.com/Miuzarte/ANSIFmt -v -timeout 1s
 ```
 
 #### Simply Print
 
 **output:**
 
-![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/50b81255-84d1-4d47-bbc8-94a617f5b4bd)
-
-You might notice there's still background color at the end of line 3 and 7.
-
-Actually I have RESET the escape sequences at the end of every string.
-
-So I thing it's a bug caused by WindowsTerminal?
-
-It is in line with expectations in JetBrains GoLand output terminal.
+![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/46a5ca92-022b-444c-b654-6a622ba72cfb)
 
 **code:**
 

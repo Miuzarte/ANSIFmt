@@ -149,7 +149,7 @@ func TestTrueColor(t *testing.T) {
 	}
 }
 
-func TestANSIFmt(t *testing.T) {
+func TestAllANSIEscapeSequences(t *testing.T) {
 	afmt := New()
 	fmt.Println("---")
 	afmt.Set(0).Println("Reset, Normal, Plain: 0")
