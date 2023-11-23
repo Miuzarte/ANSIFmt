@@ -21,7 +21,7 @@ go test -run ^TestUsage github.com/Miuzarte/ANSIFmt -v -timeout 1s
 
 **输出：**
 
-![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/1e8e3296-c457-4adc-9b3d-92d6b5cd6c1d)
+![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/50b81255-84d1-4d47-bbc8-94a617f5b4bd)
 
 第 3、7 行可以看到末尾仍有彩色背景
 

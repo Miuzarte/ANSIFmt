@@ -21,7 +21,7 @@ go test -run ^TestUsage github.com/Miuzarte/ANSIFmt -v -timeout 1s
 
 **output:**
 
-![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/1e8e3296-c457-4adc-9b3d-92d6b5cd6c1d)
+![Print](https://github.com/Miuzarte/ANSIFmt/assets/66856838/50b81255-84d1-4d47-bbc8-94a617f5b4bd)
 
 You might notice there's still background color at the end of line 3 and 7.
 
